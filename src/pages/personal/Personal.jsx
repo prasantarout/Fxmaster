@@ -67,6 +67,7 @@ const HowITWorks = () => {
       </div>
       <div className="imageSection">
         <img src={icons.wokring} alt="" className="image12" />
+        <img src={icons.mobileViews} alt="" className="mobileview"/>
       </div>
       <div className="thirdSection_content">
         <div className="third_content_section">
@@ -118,9 +119,9 @@ const RenderAppDownload = () => {
         <div className="rounded_cirle_container">
           <img src={icons.appDownload} alt="" className="app_Download_img" />
         </div>
-        <div className="second_cirlce_img_section">
+        {/* <div className="second_cirlce_img_section">
           <img src={icons.fx} alt="" className="fx_img" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -335,6 +336,7 @@ const Personal = ({ backgroundColor }) => {
         </div>
       </div>
       <img src={icons.frame1} alt="" className="frame_img" />
+      <img src={icons.cirlceView} alt="" className="frame_img1" />
       <div style={{ marginTop: "5em" }}>
         <HowITWorks />
       </div>
@@ -344,7 +346,7 @@ const Personal = ({ backgroundColor }) => {
       <div style={{ marginTop: "16em" }}>
         <RenderTransfer />
       </div>
-      <Testimonial/>
+      <Testimonial />
       <TransferMoney
         backgroundColor="#007bff"
         buttonColor="#ffffff"

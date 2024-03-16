@@ -101,8 +101,8 @@ groupgirl:require('./images/groupgirl.png'),
 outlineacc:require('./images/outlineacc.png'),
 man1:require('./images/man1.png'),
 man2:require('./images/man2.png'),
-man3:require('./images/man3.png')         
-
-
+man3:require('./images/man3.png'),
+mobileViews:require('./images/mobileview.png'),
+cirlceView:require('./images/CircleView.jpg')       
 }
 export default icons;

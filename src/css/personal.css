@@ -566,6 +566,13 @@ outline: none;
 border: none;
 }
 
+.mobileview{
+  display: none;
+}
+
+.frame_img1{
+  display: none;
+}
 /* text animation */
 
 
@@ -668,6 +675,10 @@ border: none;
     transform: scaleY(2) scaleX(1.2);
     margin: 10em 0em 5em 0em;
   }
+
+
+/* how it works */
+
   .how_it_work_section{
     height: 105vh;
     padding: 10px 20px;
