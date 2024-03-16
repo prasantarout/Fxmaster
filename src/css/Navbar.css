@@ -167,7 +167,7 @@
 .payments-background {
   background-image: url("../images/Payments.png");
   background-size: 100% 100%;
-  height: 100vh;
+  height: 1280px;
   width: 100%;
   position: absolute;
   top: 0;

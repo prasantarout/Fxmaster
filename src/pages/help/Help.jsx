@@ -144,7 +144,7 @@ const FrequentlyAsk = () => {
 const HaveMoreQuestions = () => {
   return (
     <div className="More_container">
-      <div className="container_wrapper_more">
+      <div className="container_wrapper_help">
         <div className="leftside_wrapper">
           <h1>HAVE MORE QUESTIONS?</h1>
           <p>
@@ -160,7 +160,7 @@ const HaveMoreQuestions = () => {
             <img
               src={icons.dk}
               alt="contact"
-              className="circle-img"
+              className="circle-img_help"
             />
           </div>
         </div>
@@ -264,8 +264,8 @@ const Help = () => {
             </button>
           </div>
           <div className="search_section">
-            <input type="text" placeholder="Search" />
-            <FaSearch className="fa-search" />
+          <FaSearch className="fa-search" />
+            <input type="text" placeholder="Search" /> 
           </div>
           {/* <RenderFxAbout /> */}
         </div>

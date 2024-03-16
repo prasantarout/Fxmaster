@@ -141,10 +141,10 @@ const RenderGlobal = () => {
         <div className="leftside_computer_global">
           <h2>PARTNERS</h2>
           <h1>DO BUSINESS WITH CONFIDENCE</h1>
-          <p>
+          <span>
             Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
             venenatis, eu sit massa. Volutpat massa rhoncus odio.
-          </p>
+          </span>
           <div className="computer_wrapper_global_item">
             {globalItem.map((item) => (
               <div className="computer_wrapper_items_section">

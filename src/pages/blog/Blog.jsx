@@ -19,7 +19,7 @@ const RenderCard = () => {
       <div className="card_section_menu">
         <img src={icons.mobile} alt="Card Image" className="card_image" />
         <div className="card_content">
-          <p className="card_author">BY SAMUEL - FEBRUARY 7, 2023</p>
+          <span className="card_author">BY SAMUEL - FEBRUARY 7, 2023</span>
           <h3 className="card_title">All you need to know about transfers</h3>
           <p className="card_description">
             Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
@@ -99,13 +99,7 @@ const RenderBlogContent = () => {
       author: "BY SAMUEL - FEBRUARY 7, 2023",
       desc: "Lorem ipsum dolor sit amet cVolutpat massa rhoncus odio. Lorem ...",
     },
-    {
-      id: 1,
-      image: icons.blog,
-      title: "Fashion and Money. Joint...",
-      author: "BY SAMUEL - FEBRUARY 7, 2023",
-      desc: "Lorem ipsum dolor sit amet cVolutpat massa rhoncus odio. Lorem ...",
-    },
+  
   ];
   return (
     <>
@@ -142,20 +136,20 @@ const HaveMoreQuestions = () => {
   return (
     <div className="More_container_wrapper">
       <div className="container_wrapper_more">
-        <div className="leftside_wrapper">
+        <div className="leftside_wrapper_blog">
           <h1>WANT TO READ MORE?</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
             venenatis, eu sit massa. Volutpat massa rhoncus odio.
           </p>
-          <div className="getinfo_btn">
+          <div className="getinfo_btn_blog">
             <button>Subscribe to newsletter</button>
           </div>
         </div>
-        <div className="rightside_Wrapper">
-          <div className="circle">
+        <div className="rightside_Wrapper_blog">
+          <div className="circle_blog">
             <img
-              src={icons.dk}
+              src={icons.ladiesstudy}
               alt="contact"
               className="circle-img"
             />
@@ -226,8 +220,8 @@ const Blog = () => {
             </button>
           </div>
           <div className="search_section_blog">
+          <FaSearch className="fa-search_icon" />
             <input type="text" placeholder="Search" />
-            <FaSearch className="fa-search_icon" />
           </div>
         </div>
       </div>
