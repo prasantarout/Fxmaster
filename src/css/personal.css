@@ -2,24 +2,13 @@
   padding: 0px;
   margin: 0px;
 }
-.leftsection_personal_wrapper  h1{
+.leftsection_personal_wrapper h1 {
   font-size: 50px;
   text-transform: uppercase;
   font-family: "Barlow", sans-serif;
-  font-weight:500;
-  line-height:70px;
+  font-weight: 500;
+  line-height: 70px;
   max-width: 80vw;
-}
-.cardview-home {
-  position: absolute;
-  top: 52%;
-  left:60%;
-  transform: translate(-50%, -50%);
-  height: 81vh;
-  width: 50%;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .personalStyles {
@@ -29,12 +18,6 @@
 .leftSection {
   width: 50%;
   gap: 20px;
-}
-
-.rightSection {
-  /* width: 50%; Set width dynamically */
-  position: relative;
-  width: calc(50% + 5%);
 }
 
 .subheading {
@@ -77,20 +60,24 @@
 }
 
 .cardStyle {
-  background-color: #ffce32;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px 50px;
-  border-radius: 10px;
-  width: 80%;
+  padding: 30px 50px; */
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  grid-gap: 0;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .image12 {
   height: 100%;
   width: 100%;
 }
 .contentStyle {
+  background-color: #ffce32;
   text-align: center;
+  padding: 24px 36px;
 }
 
 .numberStyle {
@@ -99,19 +86,28 @@
 }
 
 .thirdSection_content {
+  padding: 30px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  background: url(../images/Group.png) bottom right;
+  background-repeat: no-repeat;
+  background-size: 30%;
 }
 
 .third_content_section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 8rem 16rem 18rem;
 }
-.img_arraow{
-  height: 50%;
-  width: 50%;
+
+.img_arraow {
+  position: absolute;
+  left: -60%;
+  top: -120%;
+  width: 100%;
+  height: 128px;
   object-fit: contain;
 }
 
@@ -128,10 +124,54 @@
 
 .how_it_work_section {
   background-color: #ffce32;
-  flex: 2;
-  top: 70px;
-  height: calc(100vh-80px);
-  padding: 30px 50px;
+}
+
+.cards_sections {
+  margin: 48px 24px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 38px 1fr 38px 1fr;
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+.hiw_card {
+  width: 100%;
+  max-width: 280px;
+  font-family: "Barlow", sans-serif;
+  background-color: #1d63ff;
+  color: white;
+  border-radius: 16px;
+  padding: 24px;
+}
+.showMobileOnly {
+  display: none !important;
+}
+.showDesktopOnly {
+  display: block !important;
+}
+
+.hiw_head {
+  display: flex;
+  margin-bottom: 12px;
+}
+.hiw_head_icon {
+  width: 60px;
+  height: 60px;
+}
+.hiw_head_icon img {
+  width: inherit;
+  height: inherit;
+}
+.hiw_head_no {
+  font-size: 48px;
+  font-weight: 500;
+  margin-left: auto;
+  padding-right: 16px;
+}
+.hiw_title {
+  font-weight: 500;
+  margin: 16px 0;
 }
 
 .paragraphText {
@@ -173,12 +213,15 @@
 }
 
 .firstSection_content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   /* gap: 20px; */
   max-width: 500px;
   margin-left: 20px;
+  padding: 36px;
+  z-index: 5;
 }
 
 .container_transfer {
@@ -187,7 +230,7 @@
   top: 70px;
   padding: 30px 50px;
   color: white;
-  height:69vh;
+  margin-top: 16em;
 }
 
 .cards {
@@ -275,15 +318,18 @@
   padding: 10px;
 }
 .third_content_section_paragraph_wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .third_img_cirlce {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
   height: 50vh;
   width: 50%;
   object-fit: contain;
-  margin-top: 80px;
 }
 .appstore_img {
   height: 60px;
@@ -303,21 +349,24 @@
   right: 40%;
 }
 .second_content_Wrapper_items_circle_img {
-  display: flex;
   position: absolute;
   right: 0;
+  bottom: 0;
+  height: 120%;
+  width: 50%;
+}
+.second_content_Wrapper_items_circle_img img {
+  height: inherit;
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: -16rem; /*MarginTop for each section*/
 }
 .rounder_cicle_background {
   height: 100vh;
   width: 100%;
   object-fit: contain;
   margin-top: 30%;
-}
-.rounded_cirle_container {
-  z-index: 11111;
-  right: 0;
-  position: absolute;
-  margin-top: 25%;
 }
 
 .app_Download_img {
@@ -338,9 +387,11 @@
   object-fit: contain;
 }
 
-
-.titleStyle {
+.content_section {
+  padding-top: 36px;
 }
+
+/* .titleStyle {} */
 
 .secondTitle {
   font-size: 35px;
@@ -363,6 +414,7 @@
 .personal_services {
   display: flex;
   align-items: center;
+  overflow-x: scroll;
 }
 .heading_tag {
   font-size: 15px;
@@ -373,7 +425,7 @@
 }
 .personal_para {
   font-size: 12px;
-  font-family: "Poppins,sans-serif";
+  font-family: "Poppins", sans-serif;
   color: black;
 }
 .personal_icon {
@@ -383,34 +435,30 @@
 .personal_content {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
-  background-color: #FFCE32;
-  height: 35vh;
-  width: 60%;
+  background-color: #ffce32;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .personal_content_wrapper {
   margin-top: 10px;
+  width: 180px;
 }
 
 .personalStyles {
   overflow: "hidden";
 }
 .main_personal_Section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 50px;
-  height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: #ffce32;
+  /* max-height: 740px; */
+  padding-bottom: 40px;
 }
 
 .leftSection_personal {
-  width: 50%;
-  gap: 20px;
+  padding: 36px 48px;
 }
 .leftsection_personal_wrapper {
   display: flex;
@@ -439,17 +487,35 @@
   margin-top: 30px;
 }
 .rightsection_personal {
-  margin-top: 16em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rightsection_img_personal {
-  width: 060vw;
-  height: 130vh;
+  position: absolute;
+  bottom: -40%;
+  right: -20%;
+  height: 640px;
   object-fit: contain;
+  z-index: 0;
 }
+
+.cardview-home {
+  position: relative;
+  width: 60%;
+  max-width: 360px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  padding: 24px 36px;
+}
+
 .card_View_home_wrapper {
-  padding: 25px;
-  margin: 10px;
+  margin-bottom: 12px;
 }
+
 .cardview_home_Wrapper_Section {
   display: flex;
   justify-content: space-between;
@@ -535,7 +601,7 @@
   margin-left: 5em;
 }
 .third_personal_container_content {
-  padding: 30px 50px;
+  padding: 36px 0;
   margin-top: 5em;
   display: flex;
   justify-content: center;
@@ -546,38 +612,38 @@
   height: 100%;
   object-fit: cover;
 }
-.btn_personal{
+.btn_personal {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:0px 20px;
+  margin: 0px 20px;
 }
-.btn_personal button{
- width: 100%;
- 
- padding: 15px;
- background-color: #1d63ff;
- color: white;
- font-size: 20px;
- font-family: 'Barlow',sans-serif;
- font-weight: 500;
- border-radius:50px;
-outline: none;
-border: none;
+.btn_personal button {
+  width: 100%;
+
+  padding: 15px;
+  background-color: #1d63ff;
+  color: white;
+  font-size: 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  border-radius: 50px;
+  outline: none;
+  border: none;
 }
 
-.mobileview{
+.mobileview {
   display: none;
 }
 
-.frame_img1{
+.frame_img1 {
+  width: 100%;
   display: none;
 }
 /* text animation */
 
-
 .scrolltext_container {
-  text-align:justify;
+  text-align: justify;
 }
 
 .scrolltext {
@@ -586,7 +652,7 @@ border: none;
 }
 
 .scrolltext h2 {
-  margin-top:10px; /* Adjust the margin as needed */
+  margin-top: 10px; /* Adjust the margin as needed */
   color: blue;
 }
 
@@ -604,58 +670,58 @@ border: none;
   animation: my-animation 5s linear infinite;
 }
 
-
-@media only screen and (max-width: 2580px) and (min-width: 1440px) {
-  .cardview-home{
-    height:80vh;
-  }
+.container_wrapper1 {
+  position: relative;
+  display: block;
 }
 
-@media only screen and (max-width: 576px){
-  .main_personal_Section{
-    flex-direction: column;
-    padding: 10px 20px;
-    height: 170vh;
+@media only screen and (max-width: 2580px) and (min-width: 1440px) {
+}
+
+@media only screen and (max-width: 576px) {
+  .showMobileOnly {
+    display: block !important;
   }
-  .leftSection_personal{
-    width: 100%;
-    margin-top: 1.5em;
+  .showDesktopOnly {
+    display: none !important;
   }
-  .leftsection_personal_wrapper h1{
+  .cards_sections {
+    grid-template-columns: 1fr;
+  }
+  .cardStyle {
+    grid-template-columns: repeat(2, minmax(100px, 160px));
+    grid-gap: 24px;
+  }
+  .contentStyle {
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .main_personal_Section {
+    grid-template-columns: 1fr;
+  }
+  .leftsection_personal_wrapper h1 {
     font-size: 40px;
     line-height: 51px;
   }
-  .second_button_personal{
+  .second_button_personal {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     margin-top: 30px;
   }
   .second_button_personal button {
-   padding: 18px 60px!important;
-   width: 90%!important;
-   margin: 10px 0px;
-   font-size: 15px;
+    padding: 18px 60px !important;
+    width: 90% !important;
+    margin: 10px 0px;
+    font-size: 15px;
   }
-  .rightsection_personal{
-    margin: 0em;
-    padding: 0em;
-  }
-  .rightSection{
-    width: 100%;
+  .rightsection_personal {
+    margin-bottom: 30px;
   }
   .rightsection_img_personal {
-    width: 100%;
-    height: 90vh;
-    margin-top: 60px;
-    object-fit:fill;
-  }
-  .cardview-home{
-    top: 50%;
-    left: 49%;
-    width: 96%;
-    height: 68vh;
-    margin-top: -67px;
+    object-fit: contain;
+    bottom: -40%;
+    right: -20%;
   }
   .card_View_home_wrapper {
     padding: 11px;
@@ -663,83 +729,73 @@ border: none;
   .third_personal_container {
     padding: 10px;
   }
-  .third_personal_container_content{
-    padding: 12px;
+  .third_personal_container_content {
+    padding: 24px;
   }
-  
-  .contentStyle{
-    margin-right: 15px;
-  }
-  .frame_img{
-    object-fit:contain;
+  .frame_img {
+    object-fit: contain;
     transform: scaleY(2) scaleX(1.2);
     margin: 10em 0em 5em 0em;
   }
 
+  /* how it works */
 
-/* how it works */
-
-  .how_it_work_section{
-    height: 105vh;
+  .how_it_work_section {
     padding: 10px 20px;
   }
-  .content_section{
-    margin-top: 4.5em;
+  .content_section {
+    text-align: center;
+    padding-top: 36px;
   }
-  .paragraphText{
+  .paragraphText {
     margin-top: 10px;
   }
-  .imageSection{
+  .imageSection {
     margin-top: 3em;
   }
-  .third_content_section{
-    flex-direction: row;
-  }
-  .third_content_section_paragraph_wrapper{
+  .third_content_section_paragraph_wrapper {
     margin-top: 3em;
+    text-align: center;
   }
-  .img_arraow{
-    position: relative;
-    left: -14px;
-    width: 100px;
-    height: 80px;
-    top: -76px;
-  }
-  .third_content_section_paragraph_wrapper h1{
+  .third_content_section_paragraph_wrapper h1 {
     width: 200px;
     font-size: 25px;
     font-weight: 400;
   }
-  .third_content_section_paragraph_wrapper p{
-    text-align: left!important;
-  }
-  img.third_img_cirlce{
+  img.third_img_cirlce {
     margin-top: 150px;
     height: 24vh;
-    padding-right: 6em;
   }
-  .container1{
-    padding: 10px;
-  }
-  .container_wrapper1{
-    display: block;
-    margin-top:-5em;
-  }
-  .button_cotiner{
+  .button_cotiner {
     display: flex;
     justify-content: center;
     flex-direction: row;
   }
-  .firstSection_content h1{
-    font-size: 40px!important;
+  .firstSection_content h1 {
+    font-size: 40px !important;
   }
-  .playstore{
-    width: 120px; 
+  .playstore {
+    width: 120px;
     height: 47px;
     object-fit: contain;
   }
-  .appstore_img{
-    width: 120px; 
+
+  .third_content_section {
+    padding: 2rem 8rem 8rem;
+  }
+
+  .img_arraow {
+    height: 80px;
+    left: -60%;
+    top: -40%;
+  }
+
+  .thirdSection_content {
+    background-size: 50%;
+  }
+
+  .appstore_img {
+    width: 120px;
     height: 33px;
     object-fit: contain;
   }
@@ -747,7 +803,7 @@ border: none;
     margin: 0em;
     margin-top: 2em;
     left: 10%;
-    
+
     width: 30px;
     height: 30px;
   }
@@ -762,35 +818,46 @@ border: none;
     height: 75vh;
     width: 90%;
   }
-  .second_cirlce_img_section{
+  .second_cirlce_img_section {
     right: 15%;
     margin: 4em;
     width: 122px;
   }
-  .container_transfer{
-    margin-top: 31em;
+  .container_transfer {
+    margin-top: 5em;
     padding: 30px 20px;
   }
-  .botton_container_Wrapper_personal button{
-    width: 100%!important;
+  .botton_container_Wrapper_personal button {
+    width: 100% !important;
   }
-  .render_personal_carosuel{
-    padding: 20px;
-    height: 89vh;
+  .render_personal_carosuel {
+    padding: 24px;
   }
-  .rendrr_personal_carosuel_section h1{
+  .rendrr_personal_carosuel_section h1 {
     font-size: 40px;
   }
-  .card_personal_wrapper{
-    overflow-x: scroll;
-  }
-  .personal_content{
+  .personal_content {
     padding: 5px 40px;
   }
-  .leftsection_personal_wrapper h2{
+  .leftsection_personal_wrapper h2 {
     font-size: 47px;
   }
-  /* .personal_content_wrapper {
-    margin-top: 10px;
-  } */
+
+  .second_content_Wrapper_items_circle_img {
+    position: relative;
+    width: 100%;
+  }
+  .second_content_Wrapper_items_circle_img img {
+    position: relative;
+    bottom: -5em;
+    right: 0;
+    width: 100%;
+  }
+
+  .frame_img {
+    display: none;
+  }
+  .frame_img1 {
+    display: block;
+  }
 }

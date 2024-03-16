@@ -11,13 +11,6 @@
   margin-top: 9em;
 }
 
-.content_section {
-  text-align: center;
-}
-
-.content_heading {
-}
-
 .content_heading h1 {
   font-size: 56px;
   font-family: "poppins", sans-serif;
@@ -138,7 +131,6 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-  
 }
 
 .content_header h1 {
@@ -146,7 +138,6 @@
   font-weight: 500;
   letter-spacing: 1px;
   font-family: "Barlow", sans-serif;
-
 }
 
 .content_header p {
@@ -237,8 +228,6 @@
   height: 65vh;
   border-radius: 50%;
 }
-
-
 
 .getinfo_btn {
   display: inline-block;
@@ -394,7 +383,7 @@
     width: 620px;
     padding: 30px 50xp;
   }
- 
+
   .content_header {
     flex-direction: column;
     display: flex;
@@ -505,13 +494,11 @@
     max-width: 80%;
     margin-bottom: -30px; */
 
-     /* display: grid; */
+    /* display: grid; */
     /* grid-template-columns: repeat(auto-fit, minmax(150px, 3fr)); */
     /* gap: 10px; */
     /* margin-left: 1em; */
   }
-  
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -525,7 +512,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .content_Frequent{
+  .content_Frequent {
     margin-top: 7em;
   }
   .search_section input {
@@ -595,13 +582,13 @@
     outline: none;
     background-color: #f1f1f1;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   .fa-search {
     position: absolute;
     left: 13.8%;
-    height:16px;
+    height: 16px;
     width: 16px;
     padding: 20px 0px;
   }
@@ -618,8 +605,7 @@
     /* flex-direction: column; */
   }
 
-
-  .card-item{
+  .card-item {
     width: 150px;
     height: 150px;
     margin: 5px;
@@ -630,38 +616,37 @@
     object-fit: contain;
     margin-bottom: 30px;
   }
-  
+
   .card-item h3 {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
   }
 
-  .frequent_Container{
+  .frequent_Container {
     padding: 30px 50px;
-   
+
     text-align: center;
   }
-  .content_header h1{
+  .content_header h1 {
     font-size: 42px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .accrdian_wrapper{
+  .accrdian_wrapper {
     margin-top: 20px;
     flex-direction: column;
   }
   .container_help {
     padding: 5%;
   }
-  .content_Frequent{
+  .content_Frequent {
     margin-top: 3em;
   }
-  .frequent_Container{
+  .frequent_Container {
     padding: 5px 15px;
     min-height: 139vh;
-
   }
 
   .content_heading h1 {
@@ -676,7 +661,7 @@
   .fa-search {
     position: absolute;
     left: 11.8%;
-    height:16px;
+    height: 16px;
     width: 16px;
     padding: 20px 0px;
   }
@@ -685,7 +670,7 @@
     height: auto; /* Adjust height for smaller screens */
     padding: 10px;
   }
-  .carditem-container{
+  .carditem-container {
     margin-top: 0px;
   }
 
@@ -696,9 +681,9 @@
     margin: 5px;
   }
   .container_Wrapper_section {
-    margin-top :8em;
+    margin-top: 8em;
   }
-  .content_header p{
+  .content_header p {
     font-size: 15px;
   }
   .More_container {

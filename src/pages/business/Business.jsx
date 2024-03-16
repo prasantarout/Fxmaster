@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "../../css/business.css";
 import icons from "../../theme";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -158,7 +158,8 @@ const RenderCardContent = () => {
         <div className="rightside_content_card1">
           <h1>SAVE 6X ON EVERY TRANSFER</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
+            venenatis, eu sit massa. Volutpat massa rhoncus odio.
           </p>
         </div>
       </div>
@@ -176,10 +177,7 @@ const RenderCardContent = () => {
           <div className="card_item_content">
             <img src={icons.gateway} alt="Man" />
             <h1>Security Integrations</h1>
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet consevenenatis, eu sit massa.
-            </p>
+            <p> Lorem ipsum dolor sit amet consevenenatis, eu sit massa.</p>
           </div>
         </div>
       </div>
@@ -188,31 +186,30 @@ const RenderCardContent = () => {
 };
 
 const TestimonialCarousel = () => {
-  const carouselRef = useRef(null);
+  // const carouselRef = useRef(null);
 
-  const testimonials = [
-    {
-      id: 1,
-      image: icons.testi,
-      message:
-        "“Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus venenatis, eu sit massas odio.”",
-      name: "John Doe",
-    },
+  // const testimonials = [
+  //   {
+  //     id: 1,
+  //     image: icons.testi,
+  //     message:
+  //       "“Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus venenatis, eu sit massas odio.”",
+  //     name: "John Doe",
+  //   },
+  // ];
+  // // Add more testimonials as needed
 
-    // Add more testimonials as needed
-  ];
+  // const goToPrev = () => {
+  //   if (carouselRef.current) {
+  //     carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth;
+  //   }
+  // };
 
-  const goToPrev = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth;
-    }
-  };
-
-  const goToNext = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft += carouselRef.current.offsetWidth;
-    }
-  };
+  // const goToNext = () => {
+  //   if (carouselRef.current) {
+  //     carouselRef.current.scrollLeft += carouselRef.current.offsetWidth;
+  //   }
+  // };
 
   return (
     <div className="testimonial_section">
@@ -223,8 +220,7 @@ const TestimonialCarousel = () => {
           Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
           venenatis, eu sit massa. Volutpat massa rhoncus odio.
         </p>
-       
-        
+
         <div className="testimonial_content">
           <div className="leftside_content_carousel">
             <img src={icons.testi} alt="" />
@@ -239,18 +235,19 @@ const TestimonialCarousel = () => {
               <h5>&mdash; John Doe</h5>
             </div>
           </div>
-        
         </div>
         <div className="pagination_testil">
-          <FaArrowLeft style={{ color: "white",cursor:'pointer' }} />
+          <FaArrowLeft style={{ color: "white", cursor: "pointer" }} />
 
-          <FaArrowRight style={{ color: "white",cursor:'pointer' }} size={35}/>
+          <FaArrowRight
+            style={{ color: "white", cursor: "pointer" }}
+            size={35}
+          />
         </div>
       </div>
     </div>
   );
 };
-
 
 const RenderSearchPaymentWithIntegration = () => {
   return (
@@ -333,14 +330,14 @@ const Business = () => {
               </button>
             </div>
           </div>
-          <RenderImage />
         </div>
       </div>
+      <RenderImage />
       <RenderCardSection />
       <RenderTotalBusinessDone />
       <RenderCardContent />
       <TestimonialCarousel />
-      <RenderSearchPaymentWithIntegration/>
+      <RenderSearchPaymentWithIntegration />
       <TransferMoney
         backgroundColor="#007bff"
         buttonColor="#ffffff"
@@ -352,7 +349,7 @@ const Business = () => {
         marginTop="10em"
       />
       <TransferFxmaster />
-      <Footer/>
+      <Footer />
     </>
   );
 };

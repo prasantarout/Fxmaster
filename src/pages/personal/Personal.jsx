@@ -1,12 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import icons from "../../theme";
 import TransferMoney from "../../components/TransferMoney";
 import TransferFxmaster from "../../components/TransferFxmaster";
 import Footer from "../../components/Footer";
 import "../../css/personal.css";
 import Testimonial from "../../components/Testimonal";
-
-
 
 // import TestimonialCarousel from "../../components/TestimonialCarousel";
 const dataItem = [
@@ -65,22 +63,80 @@ const HowITWorks = () => {
           </p>
         </div>
       </div>
-      <div className="imageSection">
+      {/* <div className="imageSection">
         <img src={icons.wokring} alt="" className="image12" />
         <img src={icons.mobileViews} alt="" className="mobileview"/>
+      </div> */}
+      <div className="cards_sections">
+        <div className="hiw_card">
+          <div className="hiw_head">
+            <div className="hiw_head_icon">
+              <img src={icons.hiw_icon1} alt="HIW I1" />
+            </div>
+            <div className="hiw_head_no">1</div>
+          </div>
+          <p className="hiw_title">Register for Free</p>
+          <p className="hiw_para">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div className="hiw_icon">
+          <ion-icon
+            name="arrow-forward-outline"
+            style={{ fontSize: "48px", fontWeight: "bold" }}
+            class="showDesktopOnly"
+          ></ion-icon>
+          <ion-icon
+            name="arrow-down-outline"
+            style={{ fontSize: "48px", fontWeight: "bold" }}
+            class="showMobileOnly"
+          ></ion-icon>
+        </div>
+        <div className="hiw_card">
+          <div className="hiw_head">
+            <div className="hiw_head_icon">
+              <img src={icons.hiw_icon2} alt="HIW I2" />
+            </div>
+            <div className="hiw_head_no">2</div>
+          </div>
+          <p className="hiw_title">Set up Transfer</p>
+          <p className="hiw_para">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </p>
+        </div>
+        <div className="hiw_icon">
+          <ion-icon
+            name="arrow-forward-outline"
+            style={{ fontSize: "48px", fontWeight: "bold" }}
+            class="showDesktopOnly"
+          ></ion-icon>
+          <ion-icon
+            name="arrow-down-outline"
+            style={{ fontSize: "48px", fontWeight: "bold" }}
+            class="showMobileOnly"
+          ></ion-icon>
+        </div>
+        <div className="hiw_card">
+          <div className="hiw_head">
+            <div className="hiw_head_icon">
+              <img src={icons.hiw_icon3} alt="HIW I3" />
+            </div>
+            <div className="hiw_head_no">3</div>
+          </div>
+          <p className="hiw_title">Make Payment</p>
+          <p className="hiw_para">Lorem ipsum dolor sit amet lorem.</p>
+        </div>
       </div>
       <div className="thirdSection_content">
         <div className="third_content_section">
-          <img src={icons.paper} alt="arraow" className="img_arraow" />
           <div className="third_content_section_paragraph_wrapper">
+            <img src={icons.paper} alt="arraow" className="img_arraow" />
             <h1>Thats all . Its done!</h1>
             <p style={{ maxWidth: "800px", textAlign: "center" }}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
               venenatis, eu sit massa. Volutpat massa rhoncus odio.
             </p>
           </div>
-          <img src={icons.group} alt="" className="third_img_cirlce" />
         </div>
+        {/* <img src={icons.group} alt="" className="third_img_cirlce" /> */}
       </div>
     </div>
   );
@@ -88,40 +144,26 @@ const HowITWorks = () => {
 
 const RenderAppDownload = () => {
   return (
-    <div className="container1">
-      <div className="container_wrapper1">
-        <div style={{ marginTop: "5em" }}>
-          <div className="firstSection_content">
-            <p style={{ fontSize: "15px" }}>APP DOWNLOAD</p>
-            <h1 style={contentText}>FAST, SECURE TRANSFERS</h1>
-            <p style={{ marginTop: "20px" }}>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
-              venenatis, eu sit massa. Volutpat massa rhoncus odio.
-            </p>
-            <div className="button_cotiner">
-              <a href="#">
-                <img src={icons.playstore} alt="" className="playstore" />
-              </a>
-              <a href="#">
-                <img src={icons.appstore} alt="" className="appstore_img" />
-              </a>
-            </div>
-          </div>
+    <div className="container_wrapper1">
+      <div className="firstSection_content">
+        <p style={{ fontSize: "15px" }}>APP DOWNLOAD</p>
+        <h1 style={contentText}>FAST, SECURE TRANSFERS</h1>
+        <p style={{ marginTop: "20px" }}>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
+          venenatis, eu sit massa. Volutpat massa rhoncus odio.
+        </p>
+        <div className="button_cotiner">
+          <a href="#!">
+            <img src={icons.playstore} alt="" className="playstore" />
+          </a>
+          <a href="#!">
+            <img src={icons.appstore} alt="" className="appstore_img" />
+          </a>
         </div>
-        <div className="drop_cirlce_Small" />
-        <div className="second_content_Wrapper_items_circle_img">
-          <img
-            src={icons.roundedCirlce}
-            alt=""
-            className="rounder_cicle_background"
-          />
-        </div>
-        <div className="rounded_cirle_container">
-          <img src={icons.appDownload} alt="" className="app_Download_img" />
-        </div>
-        {/* <div className="second_cirlce_img_section">
-          <img src={icons.fx} alt="" className="fx_img" />
-        </div> */}
+      </div>
+      <div className="second_content_Wrapper_items_circle_img">
+        <img src={icons.showcase_desk} alt="" className="showDesktopOnly" />
+        <img src={icons.showcase_mobile} alt="" className="showMobileOnly" />
       </div>
     </div>
   );
@@ -217,9 +259,9 @@ const RenderTransfer = () => {
         </button>
       </div>
       <div className="card_personal_wrapper">
-        <div className="personal_services">
+        <div className="personal_services scroll">
           {dataItem?.map((item, index) => (
-            <div className="personal_content">
+            <div className="personal_content" key={index}>
               <div className="personal_content_wrapper">
                 <img src={item.icon} alt="" className="personal_icon" />
                 <h1 className="heading_tag">{item?.title}</h1>
@@ -232,8 +274,6 @@ const RenderTransfer = () => {
     </div>
   );
 };
-
-
 
 const Personal = ({ backgroundColor }) => {
   return (
@@ -278,52 +318,51 @@ const Personal = ({ backgroundColor }) => {
             </div>
           </div>
         </div>
-        <div className="rightSection">
-          <div className="rightsection_personal">
-            <img
-              src={icons.personal}
-              alt="Image1"
-              className="rightsection_img_personal"
-            />
-            <div className="cardview-home">
-              <div className="card_View_home_wrapper">
-                <div className="cardview_home_Wrapper_Section">
-                  <div className="cardview_container_section">
-                    <span>You Send</span>
-                    <h3>100</h3>
-                  </div>
-                  <img src={icons.country} alt="" className="country_img" />
+
+        <div className="rightsection_personal">
+          <img
+            src={icons.personal}
+            alt="Image1"
+            className="rightsection_img_personal"
+          />
+          <div className="cardview-home">
+            <div className="card_View_home_wrapper">
+              <div className="cardview_home_Wrapper_Section">
+                <div className="cardview_container_section">
+                  <span>You Send</span>
+                  <h3>100</h3>
                 </div>
-                <div className="country_img_wrapper">
-                  {dataItem?.map((item, index) => (
-                    <div
-                      key={index}
-                      className="cardview_container_section_country"
-                    >
-                      <div className="cardview_container_section_country_div">
-                        <div className="cardview_container_section_country_div_img">
-                          <span>{item?.symbol}</span>
-                        </div>
+                <img src={icons.country} alt="" className="country_img" />
+              </div>
+              <div className="country_img_wrapper">
+                {dataItem?.map((item, index) => (
+                  <div
+                    key={index}
+                    className="cardview_container_section_country"
+                  >
+                    <div className="cardview_container_section_country_div">
+                      <div className="cardview_container_section_country_div_img">
+                        <span>{item?.symbol}</span>
                       </div>
-                      <div></div>
-                      <p>
-                        <span className="span_item">{item?.price}</span>
-                      </p>
-                      <span className="seller_Span">{item?.seller}</span>
                     </div>
-                  ))}
-                </div>
-                <div className="receipent_items">
-                  <div className="recept_items_Section">
-                    <span>Recipient gets</span>
-                    <h3>1,380.69</h3>
+                    <div></div>
+                    <p>
+                      <span className="span_item">{item?.price}</span>
+                    </p>
+                    <span className="seller_Span">{item?.seller}</span>
                   </div>
-                  <img src={icons.sender} alt="" className="sender_img" />
+                ))}
+              </div>
+              <div className="receipent_items">
+                <div className="recept_items_Section">
+                  <span>Recipient gets</span>
+                  <h3>1,380.69</h3>
                 </div>
+                <img src={icons.sender} alt="" className="sender_img" />
               </div>
-              <div className="btn_personal">
-                <button>Get Started</button>
-              </div>
+            </div>
+            <div className="btn_personal">
+              <button>Get Started</button>
             </div>
           </div>
         </div>
@@ -343,9 +382,7 @@ const Personal = ({ backgroundColor }) => {
       <div style={{ marginTop: "5em" }}>
         <RenderAppDownload />
       </div>
-      <div style={{ marginTop: "16em" }}>
-        <RenderTransfer />
-      </div>
+      <RenderTransfer />
       <Testimonial />
       <TransferMoney
         backgroundColor="#007bff"

@@ -103,18 +103,8 @@ const RenderComputer = () => {
         </div>
 
         <div className="rightside_computer">
-          <div
-            style={{
-              height: "50px",
-              width: "50px",
-              backgroundColor: "blue",
-              borderRadius: "50%",
-              right: "5%",
-            }}
-          />
           <div className="img_container">
-            <img src={icons.roundedCirlce} alt="" />
-            <img src={icons.computer} alt="" style={{ marginRight: "10%" }} />
+            <img src={icons.computer} alt="Security_" />
           </div>
         </div>
       </div>
@@ -126,19 +116,19 @@ const HaveMoreQuestions = () => {
   return (
     <div className="know_container_wrapper">
       <div className="container_wrapper_known">
-          <div className="circle_known">
-            <img src={icons.dk} alt="contact" className="circle-img1" />
+        <div className="circle_known">
+          <img src={icons.dk} alt="contact" className="circle-img1" />
+        </div>
+        <div className="leftside_wrapper_known">
+          <h1>KNOW MORE DETAILS?</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
+            venenatis, eu sit massa. Volutpat massa rhoncus odio.
+          </p>
+          <div className="getinfo_btn_know">
+            <button>Get in touch</button>
           </div>
-          <div className="leftside_wrapper_known">
-            <h1>KNOW MORE DETAILS?</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel
-              venenatis, eu sit massa. Volutpat massa rhoncus odio.
-            </p>
-            <div className="getinfo_btn_know">
-              <button>Get in touch</button>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
   );
@@ -164,9 +154,9 @@ const Security = () => {
       <RenderCardWithData />
       <RenderFriend />
       <RenderComputer />
-      <HaveMoreQuestions/>
-      <TransferFxmaster/>
-      <Footer/>
+      <HaveMoreQuestions />
+      <TransferFxmaster />
+      <Footer />
     </>
   );
 };

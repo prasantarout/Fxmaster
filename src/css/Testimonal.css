@@ -1,12 +1,7 @@
 /* carosule section start */
 .render_personal_carosuel {
-  padding: 30px 50px;
+  padding: 16px;
   background-color: antiquewhite;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: calc(150vh - 10px);
 }
 
 .rendrr_personal_carosuel_section {
@@ -33,18 +28,13 @@
   justify-content: space-between;
   display: flex;
 }
-.container_wrapper1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-}
 .rendrr_personal_carosuel_section {
   font-size: 15px;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
   max-width: 700px;
+  margin: 48px auto;
   text-align: center;
 }
 
@@ -52,47 +42,40 @@
   max-width: 104rem;
   padding: 1rem 1rem;
   margin: 0 auto;
-  margin-top: 10em;
+  /* margin-top: 10em; */
 }
 
 .swiper_container {
   /* padding: 1rem 0; */
   position: relative;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 5rem;
 }
 
 .swiper-slide {
   width: 20rem;
   height: 35rem;
-
 }
 
 .swiper-card-item {
-  padding: 10px;
+  padding: 24px;
   background-color: #ffce32;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  height: 60vh;
   gap: 50px;
   position: relative;
-}
-.swiper-card-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  transition: opacity 1s ease;
+  transition: opacity 200ms ease-in-out;
 }
 
-.swiper-card-item:not(.swiper-slide-active)::before {
-  opacity: 0.8;
+:not(.swiper-slide-active) .swiper-card-item {
+  opacity: 0.5;
 }
-.swiper-card-item.swiper-slide-active::before {
-  opacity: 0.1;
+.swiper-slide-active .swiper-card-item {
+  opacity: 1;
 }
 
 .swiper-card-item p {
@@ -181,9 +164,6 @@
 }
 
 @media (max-width: 500px) {
-  .swiper_container {
-    height: 47rem;
-  }
   .swiper-slide {
     width: 28rem !important;
     height: 36rem !important;
@@ -201,6 +181,6 @@
   }
   .swiper-slide {
     width: 15rem !important;
-    height:30rem !important;
+    height: 30rem !important;
   }
 }
