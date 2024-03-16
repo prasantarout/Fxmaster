@@ -1,0 +1,366 @@
+.container_blog {
+  padding: 30px 50px;
+  z-index: 99999;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #ffce32;
+  height: 100vh;
+}
+
+.container_blog_section {
+  flex-direction: column;
+  margin-bottom: 15em;
+}
+
+.content_section_Blog {
+  text-align: center;
+}
+
+.content_heading_blog h1 {
+  font-size: 56px;
+  font-family: "poppins", sans-serif;
+  max-width: 80%;
+  margin: 0 auto; /* This centers the block element itself, not its contents */
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content_heading_blog p {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+  width: 65%;
+  margin: 0 auto; /* This centers the block element itself, not its contents */
+}
+
+.button_section_blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.button_section_blog button {
+  margin-right: 10px;
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  color: #563e3e;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 15%;
+  font-size: 16px;
+}
+
+.button_section_blog button.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.search_section_blog {
+  margin-top: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.search_section_blog input {
+  padding: 10px 40px 10px 45px;
+  width: 50%;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #f1f1f1;
+}
+
+.fa-search_icon {
+  position: absolute;
+  left: 33.5%;
+  height: 15px;
+  width: 15px;
+}
+
+/* card section */
+.card_Section_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card_section_menu {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  -webkit-box-shadow: -1px 5px 13px -7px rgba(0, 0, 0, 0.94);
+  -moz-box-shadow: -1px 5px 13px -7px rgba(0, 0, 0, 0.94);
+  box-shadow: -1px 5px 13px -7px rgba(0, 0, 0, 0.94);
+  border-radius: 10px;
+  width: 100%; /* Remove this line if you want the element to expand */
+  max-width: 1400px; /* Adjust this value as needed */
+  height: auto;
+  position: absolute;
+}
+
+.card_image {
+  width: 600px; /* Adjust as needed */
+  height: 300px;
+  margin-right: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card_content {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.card_author {
+  font-size: 12px;
+  color: black;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-family: "poppins" sans-serif;
+}
+
+.card_title {
+  font-size: 30px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-family: "Roboto" sans-serif;
+  max-width: 500px;
+}
+
+.card_description {
+  font-size: 12px;
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+.read_more_button {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid #144aad;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 30%;
+}
+
+/* blog content start */
+.blog_content_start {
+}
+
+.blog-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+  padding: 30px 50px;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination a{
+  text-decoration: none;
+  margin: 10px;
+  color: #ccc;
+}
+
+.pagination a.active{
+  color: black;
+}
+
+.blog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.card a {
+  display: flex;
+  /* margin-top: 10px; */
+  text-decoration: none;
+  color: #1d63ff;
+  font-weight: bold;
+  align-self: flex-end;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card_content_start {
+  padding: 10px 20px;
+}
+
+.More_container_wrapper{
+  padding: 30px 50px;
+  background-color: #1d63ff;
+  height: 50vh;
+  margin-top:8em;
+}
+
+
+/* Responsive code */
+@media only screen and (max-width: 576px){
+  .content_heading_blog{
+    max-width: 100%;
+    height: 135px;
+    text-align: center;
+  }
+
+  .content_heading_blog h1 {
+    font-size: 35px;
+    max-width: 299px;
+    height: 48px;
+    width: 100%;
+  }
+  .container_blog {
+    padding: 10px 20px;
+  }
+  .container_blog_section {
+    margin-bottom: 20em;
+  }
+  .content_heading_blog p{
+    margin: 21px auto;
+    width: 95%;
+  }
+
+  .button_section_blog button {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 25%;
+    margin-top: 5px;
+  }
+  .search_section_blog input{
+    width: 60%;
+  }
+  .search_section_blog{
+    margin-top: 28px;
+  }
+  .fa-search_icon{
+    left: 15.5%;
+  }
+  .card_Section_content{
+    margin-top: 18px;
+  }
+  .card_section_menu {
+    flex-direction: column;
+    width:90%;
+  }
+  .card_image{
+    width: 100%;
+    margin: 0px;
+    border-radius: 5px;
+    height: 338px;
+  }
+  .card_content {
+    margin :0px;
+    padding: 7px 19px;
+  }
+  .card_description{
+    font-size: 14px;
+  }
+  .card_title{
+    font-size: 23px;
+  }
+  .read_more_button {
+    width: 95%;
+    text-align: center;
+    margin: 25px 0px;
+  }
+  .blog-content-container {
+    margin-top : 22em;
+    padding: 18px;
+  }
+  .blog-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    gap: 15px;
+  }
+  .More_container_wrapper {
+    margin-top: 2em;
+  }
+  .circle{
+    width: 100%;
+    height: 100%;
+  }
+  .circle-img{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: -246px;
+    right: 1px;
+  }
+  .leftside_wrapper {
+    gap:12px;
+  }
+  .leftside_wrapper h1{
+    font-size: 36px;
+    width: 58%;
+    line-height: 1.4;
+  }
+  .More_container_wrapper {
+    padding: 69px 20px;
+  }
+  .getinfo_btn{
+    width: 90%;
+  }
+  .getinfo_btn button{
+    width: 90%;
+    height: 45px;
+  }
+  .leftside_wrapper p{
+    font-size: 14px;
+    width: 58%;
+  }
+  .More_container_wrapper {
+    height: 35vh;
+  }
+  .container {
+    height: 109vh;
+  }.fxmaster_btn button{
+    padding: 25px 93px;
+  }
+  .pagination{
+    margin-bottom: 3.5em;
+  }
+}

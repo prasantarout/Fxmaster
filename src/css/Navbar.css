@@ -1,0 +1,371 @@
+:root {
+  --bottom-line-color: #ffce32;
+}
+
+.navbar_custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Make the navbar transparent */
+  padding: 30px 50px;
+  z-index: 99999;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.white-text {
+  color: white;
+}
+
+.navbar-logo img {
+  width: 204px; /* Adjust as needed */
+  height: 72;
+  margin-right: 20px;
+}
+
+.navbar-sections a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.navbar-sections a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  background-color: blue;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-menu {
+  margin-left: 30em;
+  display: flex;
+}
+
+.navbar-sections {
+  margin-left: 10em;
+  display: flex;
+}
+
+.navbar-menu a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #333333;
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.navbar-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: blue; /* Change color as needed */
+  transition: width 0.3s ease-in-out; /* Add transition effect */
+}
+
+.navbar-menu a.active::after,
+.navbar-sections a.active::after {
+  width: 100%; /* Set the width to 100% when the menu item is active */
+}
+
+.navbar_yellow a.active::after {
+  width: 100%;
+  background-color: #ffce32;
+}
+
+.navbar-auth {
+  /* margin-right: 6em; */
+}
+
+.navbar-auth .yellow_btn_outline {
+  color: #ffce32;
+  border: 2px solid;
+  border-color: #ffce32;
+  width: 80px;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navbar-auth .yellow_btn {
+  background-color: #ffce32;
+  width: 80px;
+  height: 28px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 50px;
+  color: blue;
+  font-weight: 500;
+}
+
+.navbar-auth button {
+  margin-right: 10px;
+  outline: none;
+  border: "2px solid";
+  border-color: blue;
+  background-color: transparent;
+}
+
+.navbar-auth .login-btn {
+  background-color: "transparent";
+  color: black;
+  width: 80px;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 2px solid;
+  border-color: blue;
+  outline: none;
+  color: blue;
+}
+
+.navbar-auth .signup-btn {
+  background-color: blue;
+  color: white;
+  width: 80px;
+  height: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.msb-background {
+  background-image: url("../images/payment.png");
+  background-size: 100% 100%;
+  height: 100vh; /* Adjust height as needed */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it's behind other content */
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.payments-background {
+  background-image: url("../images/Payments.png");
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+.mobile_menu_icon {
+  display: none;
+}
+/* Add this CSS for mobile responsiveness */
+@media screen and (max-width: 960px) {
+  .navbar {
+    transition: 0.8s all ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-sections {
+    display: none;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-auth {
+    display: none;
+  }
+  .navbar-logo img {
+    width: 250px; /* Adjust as needed */
+    height: 72px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+  .mobile_menu_icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 120%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 100;
+    color: black;
+  }
+  .mobile-menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    position: fixed;
+    right: -25px;
+    top: 0em;
+    width: 100%;
+    padding: 50px 40px 24px 80px;
+    height: 90vh;
+    transition: all 0.6s ease-in-out;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    cursor: pointer;
+    color: black;
+  }
+
+  .mobile-menu-items a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: "Barlow", sans-serif;
+  }
+  .border_bottom {
+    border-width: 2px;
+    border-color: red;
+    border: 2px solid #f2f3f4;
+    width: 50%;
+  }
+  .btn_Wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .btn_Wrapper .yellow_btn_outline {
+    color: #ffce32;
+    border: 2px solid;
+    border-color: #ffce32;
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .btn_Wrapper .yellow_btn {
+    background-color: #ffce32;
+    width: 80px;
+    height: 28px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: blue;
+    font-weight: 500;
+  }
+
+  .btn_Wrapper button {
+    margin-right: 10px;
+    outline: none;
+    border: "2px solid";
+    border-color: blue;
+    gap: 20px;
+  }
+
+  .btn_Wrapper .login-btn {
+    color: black;
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid;
+    border-color: blue;
+    outline: none;
+    color: blue;
+    height: 5vh;
+    width: 50vw;
+  }
+  .blue-text {
+    color: blue !important;
+  }
+
+  .btn_Wrapper .signup-btn {
+    background-color: blue;
+    color: white;
+    height: 5vh;
+    width: 50vw;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar-sections {
+    display: none;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-auth {
+    display: none;
+  }
+  .navbar-logo img {
+    width: 200px; /* Adjust as needed */
+    height: 72px;
+    object-fit: contain;
+  }
+  .mobile_menu_icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 120%);
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 100;
+    color: black;
+    width: 24px;
+    height: 24px;
+  }
+  .btn_Wrapper .signup-btn {
+    background-color: blue;
+    color: white;
+    height: 5vh;
+    width: 50vw;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 20px;
+  }
+  .navbar {
+    padding: 5px 10px 0px 20px;
+  }
+}
+
+
+@media only screen and (max-width: 576px){
+
+  .navbar-logo img {
+    width: 115px; /* Adjust as needed */
+    height: 72px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,100 @@
+.container {
+  padding: 30px 50px;
+  background-color: #ffce32;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.content_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.fxmaster_content {
+  gap: 10px;
+}
+.fxmaster_content h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  max-width: 800px;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+.fxmaster_content p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.fxmaster_btn {
+  display: inline-block; /* Ensure the button container takes up only the necessary width */
+}
+
+.fxmaster_btn button {
+  padding: 10px 20px;
+  background-color: blue;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 50px;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transition effects */
+}
+
+.fxmaster_btn button:hover {
+  background-color: blue; /* Change background color on hover */
+}
+
+@media screen and (max-width: 1440px) {
+  .content_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .fxmaster_content h1 {
+    font-size: 60px;
+    max-width: 900px;
+    text-align: center;
+  }
+  .fxmaster_content p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+
+  .fxmaster_btn button {
+    padding: 20px 30px;
+    background-color: blue;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 50px;
+    font-weight: 500;
+    color: white;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition effects */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}

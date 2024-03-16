@@ -1,0 +1,679 @@
+.msb__container__wrapper {
+  padding: 30px 50px;
+  z-index: 99999;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+.msb__wrapper_section {
+  flex-direction: column;
+  margin-bottom: 10em;
+}
+.msb__wrappers_content {
+  gap: 20px;
+}
+
+.msb__wrappers_content h1 {
+  font-size: 50px;
+  font-family: "Barlow", sans-serif;
+  max-width: 38%;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.msb__wrappers_content p {
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  margin-top: 20px;
+  max-width: 40%;
+}
+
+.msb__btn__wrapper {
+  display: flex;
+  margin-top: 40px;
+}
+
+.msb__btn__wrapper button {
+  margin-right: 10px;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-size: 15px;
+}
+
+.msb__btn__wrapper button.active {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+/* card content */
+.hero_Sectgion {
+  padding: 30px 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.rendrer_card_wrapper_container {
+  background-color: #ffce32;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  gap: 50px;
+}
+
+.render_card_items_section {
+  text-align: center;
+  flex: 1;
+}
+.render_card_items_section h2 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+  color: blue;
+}
+
+.render_card_items_section h4 {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+}
+.render_card_items_section p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+/* render global money transfer */
+.render_globe_tranfer_container {
+  padding: 30px 8em;
+  margin-top: 5em;
+  height: calc(100vh - 100px);
+}
+.render_globe_transfer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.render_globe_transfer_content img {
+  height: 100vh;
+  width: 80%;
+}
+
+.render_cotainer_wrapper_transfer {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.render_cotainer_wrapper_transfer h1 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 2px;
+  width: 70%;
+}
+
+.render_cotainer_wrapper_transfer p {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+  width: 70%;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+/* card section */
+.container_transfer_wrapper {
+  padding: 30px 50px;
+  background-color: #fff9e4;
+  height: calc(100vh - 300px);
+  margin-top: 10em;
+}
+
+.title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+}
+
+.secondTitle {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 450;
+}
+
+.highlight {
+  color: #ffce32;
+}
+
+.transfer_wrapper_content_item p {
+  font-size: 16px;
+  text-align: justify;
+  width: 68%;
+}
+
+.button_section_transfer_btn {
+  display: flex;
+}
+
+.button_section_transfer_btn button {
+  margin-right: 10px;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 20%;
+  border: 2px solid white;
+  font-size: 15px;
+}
+
+.button_section_transfer_btn.active {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_wrapper_solution {
+  width: 250px;
+  background-color: #ffce32;
+  border-radius: 10px;
+  padding: 20px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 4em;
+}
+.card_solution_section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px 15px;
+  gap: 20px;
+}
+.card_wrapper_solution img {
+  height: 50px;
+  width: 50px;
+}
+
+.card_wrapper_solution:hover {
+  transform: translateY(-5px);
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.card_wrapper_solution p {
+  font-size: 14px;
+  color: #333;
+}
+
+.render_cards_transfer_container {
+  padding: 30px 50px;
+  margin: 0px 5em;
+  margin-top: 10em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftside_transfer_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.leftside_content_items_section {
+  margin-right: 5em;
+}
+
+.leftside_transfer_cards h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+}
+
+.leftside_transfer_cards p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  width: 60%;
+  text-align: right;
+}
+
+.btn_content {
+  margin-top: 1em;
+}
+
+.btn_content button {
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.content_wrapper_cards_item {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.leftside_content_cards_image img {
+  height: 60vh;
+  width: 20vw;
+}
+
+.second_content_cards_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftside_content_cards_contents {
+  height: 60vh;
+  width: 20vw;
+  background-color: blue;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 20px;
+}
+.leftside_content_cards_contents img {
+  height: 140px;
+  width: 140px;
+}
+
+.leftside_content_cards_contents h1 {
+  font-size: 20px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.leftside_content_cards_contents p {
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.card_item_content_section {
+}
+.content_wrapper_item_view {
+  text-align: center;
+}
+
+.content_Wrapper_items_views {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5em;
+  gap: 20px;
+}
+.content_wrapper_item_view h1 {
+  font-size: 34px;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.content_wrapper_item_view p {
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  text-align:left;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;width: 70%;
+
+}
+
+.btn_content_wrapper{
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+  margin-top:20px;
+}
+
+.btn_content_wrapper button{
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+
+
+
+
+
+/* computer compnay details */
+.computer_company_details{
+  padding: 30px 50px;
+  margin-top: 10em;
+ 
+}
+
+.computer_company_details_wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.leftside_computer_wrapper_details{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  width: 50%;
+}
+
+.leftside_computer_wrapper_details h2{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  color: black;
+}
+
+.leftside_computer_wrapper_details h1{
+  font-size:45px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  color: black;
+  width: 70%;
+}
+
+
+.leftside_computer_wrapper_details p{
+  font-size:15px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  color: black;
+  width: 70%;
+}
+
+.btn_company_details_wrapper button{
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top:20px;
+}
+
+.img_container_wrapper_details {
+  height: 100%; /* Change to 100% */
+  width: 100%; /* Change to 50% */
+  display: flex; /* Add */
+  align-items: center; /* Add */
+  margin-top:20em;
+ }
+
+.img_container_wrapper_details img {
+  height: 130vh;
+  width:53%;
+  position: absolute;
+  right: 0;
+}
+
+
+/* Responsive code */
+@media only screen and (max-width: 576px){
+  .msb-background{
+    height: 90vh;
+  }
+  .msb-background::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; 
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, transparent 100%);
+}
+
+  .msb__container__wrapper{
+    padding: 10px;
+  }
+  .hero_Sectgion {
+    margin-top: 48em;
+  }
+  .msb__wrapper_section{
+    margin: 30em 0em 0em 0em;
+  }
+
+
+  .msb__wrapper_section:after {
+    left: auto;
+  right: 50%;
+  transform: translateX(50%);
+  }
+  .msb__wrappers_content h1{
+    line-height: 1;
+    font-size:40px;
+    padding: 0px 40px;
+    max-width: 90%;
+  }
+  .msb__wrappers_content p{
+    padding: 0px 40px;
+    max-width: 90%;
+  }
+  .msb__btn__wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .msb__btn__wrapper button{
+    padding: 15px 16px;
+    font-size: 14px;
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+  .rendrer_card_wrapper_container{
+    flex-direction: column;
+    padding:40px 5px;
+    gap: 40px;
+    width: 71%;
+  }.render_globe_tranfer_container{
+    padding: 10px;
+    height: 140vh;
+  }
+  .render_globe_transfer_content {
+    gap: 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .render_globe_transfer_content img{
+    width: 90%;
+    height: 80vh;
+  }
+  .render_cotainer_wrapper_transfer h1 {
+    width: 85%;
+    font-size: 26px;
+    margin-top: 2em;
+  }
+  .render_cotainer_wrapper_transfer p{
+    width: 85%;
+    font-size: 14px;
+  }
+  .container_transfer_wrapper {
+    padding: 30px 25px;
+  }
+  .transfer_wrapper_content_item p{
+    width: 100%;
+  }
+  .card_wrapper_solution {
+    height: 36vh;
+    margin-right: 25px;
+    padding: 30px;
+    min-width: 200px;
+   
+  }
+  .cardsContainer{
+    overflow-x: scroll;
+  }
+  .render_cards_transfer_container{
+    height: 180vh;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: ; */
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 35em;
+  }
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+  }
+  .leftside_content_cards_image img{
+    width: 85vw;
+    height: 70vh;
+  }
+
+  .leftside_content_items_section{
+    margin: 0em;
+  }
+  .leftside_transfer_cards{
+    align-items:flex-start;
+  }
+  .leftside_transfer_cards h1{
+    font-size: 26px;
+  }
+  .leftside_transfer_cards p{
+    width: 100%; 
+    text-align: left;   
+  }
+  .btn_content button,
+  .btn_content_wrapper button,
+  .btn_company_details_wrapper button{
+    width: 201px;
+  }
+  .content_wrapper_cards_item{
+    margin: 2em 0em;
+  }
+  .second_content_cards_item{
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  .leftside_content_cards_contents{
+    width: 100%;
+    height: 45vh;
+  }
+  .leftside_content_cards_contents img{
+    width: 100px;
+    height: 100px;
+  }
+  .content_Wrapper_items_views {
+   
+    margin-left: 0em;
+    gap: 10px;
+    text-align: left;
+  }
+  .content_wrapper_item_view h1{
+    font-size: 26px;
+    margin-top: 1em;
+  }
+  .content_wrapper_item_view p{
+    width: 100%; 
+    text-align: left;
+  }
+  .computer_company_details {
+    margin: 0em;
+    padding: 20px 10px;
+  }
+ 
+  .computer_company_details_wrapper{
+    flex-direction: column-reverse;
+  }
+  .img_container_wrapper_details img{
+    width: 90%;
+    height: 76%;
+    margin:3em 0em;
+  }
+  .leftside_computer_wrapper_details{
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 15em;
+    padding: 0px 15px;
+  }
+  .leftside_computer_wrapper_details h1{
+    width: 90%;
+    font-size: 40px;
+  }
+  .leftside_computer_wrapper_details p{
+    width: 95%;
+  }
+}
