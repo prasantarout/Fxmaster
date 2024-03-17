@@ -10,6 +10,7 @@ const TransferMoney = ({
   btnTextColor,
   btnoutline,
   headerContent,
+  newclass,
   marginTop
 }) => {
   const [activeButton, setActiveButton] = useState(0);
@@ -96,7 +97,7 @@ const TransferMoney = ({
   );
 
   return (
-    <div className="transfer_container" style={{ backgroundColor,marginTop:marginTop }}>
+    <div className={`transfer_container ${newclass ?? ""}`} style={{ backgroundColor,marginTop:marginTop }}>
       <div className="transfer_Child">
         <div className="transfer_content">
           <h2 className="heding_tag" style={{ color: textColor }}>

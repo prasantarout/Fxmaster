@@ -633,7 +633,19 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 810px) {
+  .leftside_wrapper h1{
+    font-size: 35px;
+    width: 58%;
+    line-height: 43.2px;
+  }
+  .leftside_wrapper p{
+    font-size: 14px;
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .accrdian_wrapper {
     margin-top: 20px;
     flex-direction: column;
@@ -675,8 +687,8 @@
   }
 
   .card-item {
-    width: 130px;
-    height: 130px;
+    width: 115px;
+    height: 115px;
     /* gap: 5px; */
     margin: 5px;
   }
@@ -687,16 +699,22 @@
     font-size: 15px;
   }
   .More_container {
-    padding: 20px 40px;
+    padding: 69px 20px;
+    height: 44vh;
   }
+  
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
   .content_heading h1 {
     font-size: 2em; /* Responsive font size */
   }
 
   .content_section p {
     font-size: 1em; /* Responsive font size */
+  }
+  .leftside_wrapper p{
+    font-size: 14px;
+    width: 58%;
   }
 }

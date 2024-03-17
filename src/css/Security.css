@@ -493,9 +493,11 @@
     gap: 20px;
     margin-top: -10em;
   }
-
+  .rightside_card_swrapper p{
+    margin: 10px 0px ;
+  }
   .security_content_wrapper h1 {
-    font-size: 55px;
+    font-size: 48px;
     text-transform: uppercase;
     font-weight: 500;
     font-family: "Barlow", sans-serif;
@@ -507,7 +509,7 @@
   }
 
   .security_content_wrapper span {
-    font-size: 65px;
+    font-size: 40px;
     text-transform: uppercase;
     font-weight: 500;
     font-family: "Barlow", sans-serif;
@@ -525,34 +527,29 @@
   }
 }
 
+
 @media only screen and (max-width: 576px) {
   .container_security {
     padding: 10px;
-  }
-  .security_content_wrapper span {
-    font-size: 46px;
   }
   .security_content_wrapper {
     margin-top: 10px;
   }
   .security_content_wrapper h1 {
-    line-height: 1;
-    font-size: 45px;
+    line-height: 48px;
+    font-size: 40px;
   }
   /* .security_content_wrapper p{
     width: ;
   } */
-  .circle-img1 {
-    width: 210px;
-    height: 210px;
-    position: relative !important;
+
+  .circle_known img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
     top: -87px;
     left: -17px;
-  }
-  .circle_known img {
-    height: 210px;
-    width: 210px;
-    object-fit: cover;
+    position: relative !important;
   }
   .card_container {
     padding: 15px;
@@ -573,7 +570,7 @@
     left: 9%;
   }
   .rightside_card_swrapper {
-    margin-top: 24em;
+    margin-top: 25em;
     margin-right: 0em;
     font-family: "Barlow", sans-serif;
   }
@@ -582,7 +579,7 @@
     flex-direction: column-reverse;
   }
   .card_wrapper_section_second {
-    margin-top: 11em;
+    margin-top: 13em;
     padding-top: 100px;
     /* margin-left: 2em; */
   }
@@ -646,18 +643,21 @@
   }
 
   .leftside_computer {
-    width: 100%;
-    text-align: center;
-    padding: 24px;
+    width: 86%;
+    text-align: left;
+    padding: 21px;
   }
 
   .computer_wrapper {
     flex-direction: column-reverse;
     margin-top: 0em;
   }
+  .rightside_computer{
+    margin-top: 1em;
+  }
   .img_container img {
-    width: 70vw;
-    height: 70vw;
+    width: 96vw;
+    height: 96vw;
   }
   .leftside_computer h1 {
     letter-spacing: 0px;
@@ -673,6 +673,7 @@
 
   .know_container_wrapper {
     padding: 10px 20px;
+    
   }
   .leftside_wrapper_known {
     gap: 0px;
@@ -696,5 +697,32 @@
   }
   .getinfo_btn_know button {
     padding: 10px 40px;
+  }
+}
+
+
+@media only screen and (max-width: 422px) {
+  .know_container_wrapper {
+    height: 55vh;
+    padding: 76px 18px 20px 18px;
+  }
+  .circle_known{
+    position:absolute;
+    right: 0px;
+    margin-top: -22em;
+  }
+  .circle_known img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+  }
+  .leftside_wrapper_known {
+
+    gap: 20px;
+  }
+  .leftside_wrapper_known h1 {
+    width: 56%;
   }
 }

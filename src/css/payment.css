@@ -340,8 +340,9 @@
 }
 .img_container_global img {
   max-height: 100vh;
-  max-width: 100%;
+  max-width: 92%;
   object-fit: contain;
+  transform: translateX(10px);
 }
 
 
@@ -457,19 +458,19 @@
   }
   .leftside_content_cards{
     width: 100%;
-    height: 75vh;
+    height: 68vh;
   }
   .leftside_content_cards img{
-    width: 100%;
-    height: 75vh;
+    width: 310px;
+    height: 68vh;
   }
   .rightside_content_card{
     margin: 0em;
-    padding: 10px 30px;
+    padding: 10px 30px 10px 40px;
   }
   .rightside_content_card h1,
   .content_wrapper_item h1{
-    font-size: 26px;
+    font-size: 24px;
     text-align: left;
   }
   .rightside_content_card p{
@@ -533,7 +534,7 @@
     width: 100%;
   }
   .leftside_computer_global{
-    margin-top : 0em;
+    margin-top : 1.5em;
     padding: 0px 20px;
     font-weight: 500;
   }
@@ -553,7 +554,7 @@
  
   .render_globe_map{
     padding: 10px;
-    height: 110vh;
+    height: 92vh;
   }
   .render_globe_map_content{
     gap: 0px;

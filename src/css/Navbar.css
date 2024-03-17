@@ -2,7 +2,7 @@
   --bottom-line-color: #ffce32;
 }
 
-.navbar_custom {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,12 +52,12 @@
 }
 
 .navbar-menu {
-  margin-left: auto;
+  margin-left: 25em;
   display: flex;
 }
 
 .navbar-sections {
-  margin-left: 24px;
+  margin-left: 10em;
   display: flex;
 }
 
@@ -185,8 +185,30 @@
     transition: 0.8s all ease;
   }
 }
+@media only screen and (max-width:1320px ) and (min-width: 1000px) {
+  .navbar {
+    padding: 30px 28px;
+  }
+  .navbar-sections{
+    margin-left: 2em;
+  }
+  .navbar-menu{
+    margin-left: 15em;
+    
+  }
+  .navbar-menu a {
+    margin-right: 20px;
+  }
+  .navbar-logo img{
+    margin-right: 10px;
+  }
+  .navbar-auth .login-btn{
+    width: 75px;
+  }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
+  
   .navbar-sections {
     display: none;
   }
@@ -220,7 +242,7 @@
     align-items: center;
     gap: 9px;
     position: fixed;
-    right: -25px;
+    right: -39px;
     top: 0em;
     width: 100%;
     padding: 50px 40px 24px 80px;
@@ -234,19 +256,20 @@
   .close-icon {
     position: absolute;
     top: 1.5em;
-    right: 2em;
+    right: 2.3em;
     cursor: pointer;
     color: black;
+    height: 24px;
   }
 
   .mobile-menu-items a {
     text-decoration: none;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     color: black;
-    font-family: "Barlow", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
   .border_bottom {
     border-width: 2px;
@@ -360,7 +383,9 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+
+@media only screen and (max-width: 576px){
+
   .navbar-logo img {
     width: 115px; /* Adjust as needed */
     height: 72px;
