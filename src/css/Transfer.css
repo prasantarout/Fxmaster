@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  padding-top:6%;
-  padding-bottom:10%;
+  padding-top: 6%;
+  padding-bottom: 10%;
 }
 
 .heding_tag {
@@ -20,11 +20,10 @@
   font-family: "Poppins", sans-serif;
 }
 .paragraph {
-  font-size:13px;
+  font-size: 13px;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   margin-top: 15px;
-
 }
 .btn_section {
   flex-direction: row;
@@ -41,7 +40,6 @@
   border: 2px solid black;
   margin-top: 30px;
   cursor: pointer;
-  width: 14%;
 }
 
 .btn_section button.active {
@@ -52,27 +50,23 @@
 .country-details-container {
   display: flex;
   justify-content: center;
-  gap:40px;
-  margin-top:5em;
-  
+  gap: 40px;
+  margin-top: 5em;
 }
 
 .column {
   display: flex;
   flex-direction: "row";
   flex-wrap: wrap;
-
-
 }
 
 .country-details {
-  padding:20px;
+  padding: 20px;
   border-radius: 10px;
   align-self: flex-start;
   display: flex;
   width: calc(18% - 20px);
   flex-direction: column;
- 
 }
 
 .country-details img {
@@ -89,7 +83,7 @@
 .country-details p {
   margin-bottom: 10px;
   font-size: 12px;
-  max-width:100px;
+  max-width: 100px;
 }
 
 .account-details-link {
@@ -97,28 +91,26 @@
   text-decoration: underline;
 }
 
-
 /* responsive */
 
 @media (max-width: 1000px) {
-  
 }
 
-@media screen  and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .heding_tag {
     text-transform: uppercase;
-    letter-spacing:1px;
+    letter-spacing: 1px;
     font-size: 62px;
-    font-weight:600;
+    font-weight: 600;
     font-family: "Barlow", sans-serif;
     line-height: 70px;
   }
   .paragraph {
-    font-size:20px;
+    font-size: 20px;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
     margin-top: 15px;
-    max-width:90%;
+    max-width: 90%;
     text-align: justify;
   }
   .btn_section {
@@ -135,7 +127,7 @@
     border: 2px solid black;
     margin-top: 30px;
     cursor: pointer;
-    width:2000em;
+    width: 2000em;
     font-size: 15px;
     /* max-width: 1000px; */
   }
@@ -143,73 +135,68 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap:40px;
-    margin-top:5em;
-    
+    gap: 40px;
+    margin-top: 5em;
   }
-  
+
   .column {
     display: flex;
     flex-direction: "column";
-  
-  
   }
-  
+
   .country-details {
-    padding:20px;
+    padding: 20px;
     border-radius: 10px;
     align-self: flex-start;
     display: flex;
     width: calc(18% - 20px);
     flex-direction: column;
-   
   }
-  
+
   .country-details img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
   }
-  
+
   .country-details h3 {
     font-size: 14px;
     margin-bottom: 5px;
   }
-  
+
   .country-details p {
     margin-bottom: 10px;
     font-size: 12px;
-    max-width:100px;
+    max-width: 100px;
   }
-  
+
   .account-details-link {
     color: black;
     text-decoration: underline;
   }
 }
 
-
 @media only screen and (max-width: 576px) {
-  .transfer_container{
-    margin-top: 2em!important;
+  .transfer_container {
+    margin-top: 2em !important;
   }
   .transfer_container {
     padding: 10px 20px;
-  }.heding_tag{
+  }
+  .heding_tag {
     font-size: 42px;
     line-height: 1;
   }
-  .btn_section{
+  .btn_section {
     flex-wrap: wrap;
-
   }
-  .btn_section button{
+  .btn_section button {
     padding: 10px 0px;
     border-radius: 30px;
     margin-top: 18px;
   }
   .transfer_container .transfer_Child {
-    padding-top:10%;
+    padding-top: 10%;
   }
   .country-details {
     width: 100%;
@@ -217,13 +204,13 @@
     justify-content: center;
     align-items: center;
   }
-  .country-details p{
+  .country-details p {
     max-width: 100%;
   }
-  .country-details-container{
+  .country-details-container {
     margin-top: 3em;
   }
-  .country-details img{
+  .country-details img {
     width: 60px;
     height: 60px;
   }

@@ -52,12 +52,12 @@
 }
 
 .navbar-menu {
-  margin-left: 30em;
+  margin-left: auto;
   display: flex;
 }
 
 .navbar-sections {
-  margin-left: 10em;
+  margin-left: 24px;
   display: flex;
 }
 
@@ -360,9 +360,7 @@
   }
 }
 
-
-@media only screen and (max-width: 576px){
-
+@media only screen and (max-width: 576px) {
   .navbar-logo img {
     width: 115px; /* Adjust as needed */
     height: 72px;

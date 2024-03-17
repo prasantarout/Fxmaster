@@ -1,19 +1,22 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
+
 import "../css/Testimonal.css";
 import icons from "../theme";
+
 const Testimonial = () => {
   return (
     <>
       <div className="render_personal_carosuel">
         <div className="rendrr_personal_carosuel_section">
           <h1>
-            MILLION REASONS TO CHOOSE F<spa style={{ color: "blue" }}>X</spa>
+            MILLION REASONS TO CHOOSE F<span style={{ color: "blue" }}>X</span>
             MASTER
           </h1>
           <p>
@@ -25,15 +28,15 @@ const Testimonial = () => {
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
+            rewind={true}
             centeredSlides={true}
-            watchSlidesVisibility={true}
+            // watchSlidesVisibility={true}
             loop={true}
-            slidesPerView={'auto'}
+            slidesPerView="auto"
             coverflowEffect={{
-              rotate:1,
+              rotate: 0,
               stretch: 0,
-              depth:100,
-              
+              depth: 100,
             }}
             pagination={{ el: ".swiper-pagination", clickable: true }}
             navigation={{
@@ -45,7 +48,7 @@ const Testimonial = () => {
             className="swiper_container"
           >
             <SwiperSlide>
-              <div className="swiper-card-item" >
+              <div className="swiper-card-item">
                 <img src={icons.man1} alt="" />
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
