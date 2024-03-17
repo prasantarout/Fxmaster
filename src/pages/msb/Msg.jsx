@@ -255,6 +255,7 @@ const Msg = () => {
         btnTextColor="#007bff"
         btnborder="1px solid #ffffff"
         btnoutline="none"
+        newclass="msb_transafer"
         // headerContent="OUR GLOBAL NETWORK"
         marginTop="35em"
       />

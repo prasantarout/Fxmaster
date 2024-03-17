@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 const RenderImage = () => {
   return (
     <div className="render_image_business">
-      <img src={icons.manwith} alt="" className="img_element" />
+      <img src={icons.manwith} alt="" className="imgs_element" />
     </div>
   );
 };
@@ -102,7 +102,7 @@ const RenderCardSection = () => {
                 <h1>our fee</h1>
                 <span>24.66 USD</span>
               </div>
-              <div className="border_bottom" />
+              <div className="border_bottoms" />
               <div className="business_tax_section">
                 <div className="business_tax_section_items">
                   <h4>e-FIRC</h4>

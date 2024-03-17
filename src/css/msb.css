@@ -494,13 +494,13 @@
     width: 100%;
     height: 50%; 
     background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, transparent 100%);
-}
+  }
 
   .msb__container__wrapper{
     padding: 10px;
   }
   .hero_Sectgion {
-    margin-top: 48em;
+    margin-top: 49em;
   }
   .msb__wrapper_section{
     margin: 30em 0em 0em 0em;
@@ -671,9 +671,14 @@
   }
   .leftside_computer_wrapper_details h1{
     width: 90%;
-    font-size: 40px;
+    font-size: 36px;
   }
   .leftside_computer_wrapper_details p{
     width: 95%;
+  }
+}
+@media only screen and (max-width: 426px){
+  .hero_Sectgion{
+    margin-top: 50em;
   }
 }

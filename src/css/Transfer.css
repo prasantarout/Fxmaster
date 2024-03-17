@@ -177,15 +177,18 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .transfer_container {
+  /* .transfer_container {
     margin-top: 2em !important;
+  } */
+  .msb_transafer{
+    margin-top: 4em!important;
   }
   .transfer_container {
     padding: 10px 20px;
   }
   .heding_tag {
-    font-size: 42px;
-    line-height: 1;
+    font-size: 36px;
+    line-height: 43.2px;
   }
   .btn_section {
     flex-wrap: wrap;

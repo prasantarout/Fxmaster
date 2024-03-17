@@ -329,17 +329,20 @@
     position: absolute;
     top: -246px;
     right: 1px;
+    /* transform: translateX(59px);
+    overflow: hidden; */
   }
   .leftside_wrapper {
     gap:12px;
   }
   .leftside_wrapper h1{
-    font-size: 36px;
+    font-size: 35px;
     width: 58%;
-    line-height: 1.4;
+    line-height: 43.2px;
   }
   .More_container_wrapper {
     padding: 69px 20px;
+    height: 44vh;
   }
   .getinfo_btn{
     width: 90%;
@@ -352,15 +355,41 @@
     font-size: 14px;
     width: 58%;
   }
-  .More_container_wrapper {
-    height: 35vh;
-  }
   .container {
     height: 109vh;
-  }.fxmaster_btn button{
+  }
+  /* .fxmaster_btn button{
     padding: 25px 93px;
-  }
+  } */
   .pagination{
-    margin-bottom: 3.5em;
+    margin-bottom: 4.2em;
   }
+  .card h3,
+  .card p{
+    font-size: 12px;
+  }
+
+  .card h2{
+    font-size: 16px;
+  }
+  .card_content_start{
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 436px){
+  .circle-img{
+    width: 181px;
+    height: 181px;
+    top: -260px;
+    right: 1px;
+  }
+  .leftside_wrapper h1{
+    font-size: 34px;
+  }
+  .leftside_wrapper p{
+    font-size: 14px;
+    width: 90%;
+  }
+  
 }

@@ -239,6 +239,12 @@
   color: #000;
   flex: 1;
 }
+.imgs_element{
+  height: 60vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
 
 /* tax */
 .business_card_tax {
@@ -255,8 +261,10 @@
   justify-content: space-between;
   padding: 10px;
 }
-.border_bottom {
+.border_bottoms {
   border-bottom: 1px solid #1b1e14;
+  border-width: 2px;
+  width: 50%;
 }
 .business_tax_section {
   display: flex;
@@ -291,21 +299,31 @@
   align-items: center;
 }
 .render_business_content_container_wrapper {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #ffce32;
   padding: 40px 20px;
   width: 75vw;
-  border-radius: 10px;
+  border-radius: 10px; */
   margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  grid-gap: 0;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .render_business_wrapper_content_items_line {
-  display: flex;
+  /* display: flex;
   align-items: center;
   gap: 10px;
-  flex-direction: column;
+  flex-direction: column; */
+  background-color: #ffce32;
+  text-align: center;
+  padding: 24px 36px;
+  
 }
 
 .render_business_wrapper_content_items_line img {
@@ -589,6 +607,20 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .render_business_content_container_wrapper {
+    grid-template-columns: repeat(2, minmax(100px, 140px));
+    grid-gap: 24px;
+  }
+  .render_business_wrapper_content_items_line{
+    padding: 24px;
+    border-radius: 12px;
+  }
+
+  .imgs_element {
+    height: 70vh;
+    object-fit: cover;
+    background-size: 100%;
+  }
   .business_container_content {
     gap: 0px;
   }

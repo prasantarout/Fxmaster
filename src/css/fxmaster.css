@@ -90,11 +90,21 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 1024px) {
-}
-
 @media screen and (max-width: 768px) {
+  .fxmaster_content h1{
+    font-size: 48px;
+  }
+  .fxmaster_content p {
+    text-align: center;
+  }
+  .container {
+    padding: 30px 40px;
+  }
+  .fxmaster_btn button {
+    padding: 16px 60px;
+    border-radius: 30px;
+    font-size: 14px;
+    width: 306px;
+  }
+
 }

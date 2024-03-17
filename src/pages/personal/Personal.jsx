@@ -430,7 +430,7 @@ const contentText = {
 
 const buttonStyleWrapper = {
   padding: "10px 20px",
-  fontSize: "16px",
+  fontSize: "14px",
   cursor: "pointer",
   marginRight: "20px",
 };

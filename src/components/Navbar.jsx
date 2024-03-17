@@ -104,7 +104,7 @@ const Navbar = () => {
   return (
     <header>
       <nav
-        className={`navbar_custom ${activeMenu ? "active-" + activeMenu : ""}`}
+        className={`navbar ${activeMenu ? "active-" + activeMenu : ""}`}
         style={{ ...navbarStyle, color: textColor }}
       >
         <div className="navbar-logo">
@@ -341,9 +341,7 @@ const Navbar = () => {
               <Link to="/login" onClick={closeMenu}>
                 <button
                   className={
-                    activeMenu === "security" || activeMenu === "business"
-                      ? "yellow_btn_outline"
-                      : "login-btn"
+                    "login-btn"
                   }
                  
                 >
@@ -353,9 +351,8 @@ const Navbar = () => {
               <Link to="/register" onClick={closeMenu}>
                 <button
                   className={
-                    activeMenu === "security" || activeMenu === "business"
-                      ? "yellow_btn"
-                      : "signup-btn"
+                   
+                    "signup-btn"
                   }
                  
                 >

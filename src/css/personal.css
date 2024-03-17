@@ -30,9 +30,9 @@
 }
 
 .paragraph {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 2em;
-  font-family: poppins, sans-serif;
+  font-family: 'poppins', sans-serif;
   margin-bottom: 20px; /* Add margin below paragraph */
 }
 
@@ -701,7 +701,7 @@
   }
   .leftsection_personal_wrapper h1 {
     font-size: 40px;
-    line-height: 51px;
+    line-height: 48px;
   }
   .second_button_personal {
     display: flex;
@@ -709,14 +709,24 @@
     justify-content: center;
     margin-top: 30px;
   }
+  .leftSection_personal {
+    padding: 18px 39px;
+  }
+  .cardview-home {
+    width: 78%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 22px 21px 27px 21px;
+    margin-top: 15px;
+  }
+
   .second_button_personal button {
-    padding: 18px 60px !important;
-    width: 90% !important;
+    padding: 12px 38px !important;
+    width: 98% !important;
     margin: 10px 0px;
     font-size: 15px;
   }
   .rightsection_personal {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .rightsection_img_personal {
     object-fit: contain;
@@ -771,6 +781,10 @@
     justify-content: center;
     flex-direction: row;
   }
+  .firstSection_content {
+    padding: 18px;
+    margin-left:10px;
+  }
   .firstSection_content h1 {
     font-size: 40px !important;
   }
@@ -785,12 +799,18 @@
   }
 
   .img_arraow {
-    height: 80px;
-    left: -60%;
-    top: -40%;
+    height: 52px;
+    left: -61%;
+    top: -20%;
+    
   }
 
+  .container {
+    padding: 30px 40px;
+  }
+  
   .thirdSection_content {
+    padding: 15px;
     background-size: 50%;
   }
 
@@ -840,7 +860,7 @@
     padding: 5px 40px;
   }
   .leftsection_personal_wrapper h2 {
-    font-size: 47px;
+    font-size: 40px;
   }
 
   .second_content_Wrapper_items_circle_img {
